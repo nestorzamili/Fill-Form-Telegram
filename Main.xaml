@@ -1,0 +1,348 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.Semantic.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1234,3225" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_input" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="552,3202" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_input]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="518,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="part10" WorkbookPath="soal_baru.xlsx" />
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Quiz Bot" sap:VirtualizedContainerService.HintSize="518,2999" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="978810e7-268a-46a1-8f2e-6bc64878acf3" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,2759" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_input]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,2697" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,2508" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" CVScreenId="15d00c10-4e43-445a-8bb6-3f8ef2f1984f" CvElementArea="1407, 971, 33, 33" CvType="Icon" DesignTimeRectangle="1412, 976, 24, 24" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='icon icon-bot-command' parentid='MiddleColumn' tag='I' aaname='' /&gt;" Guid="3a72082b-7536-4489-a84e-b6dce05f59dd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGTSURBVEhL7VZNSwMxEPX/g2KlxaJQUBFb1KXqWXSpLXoSP9YWPaioYA+2Xhe7jL5pEpKY7Nqt7kF9ELo7yZuXdDKzM0MF4w8KPvf7tLbRoLmFCo/V9Trd3t2LWTfAqW8FNF9eZA74sLlgCF5GXSpVqjRbKhsDji6iK7HKBOyYtznwA382lOBw+EpLtRUmd45P6G00ojiOaf8w5F1Xl2v0MhiI1WPgHXabEx612QZ/8KtDCfaub9jxdnOXiRJ4hg27Pj07F9Yx8A57sLNHSZIIK/EzbC6OEmy1O7wAvzZ8c3k4SjDq9pwnBHxknx38zaDJc94TyhhC9CBscSwkJhHMirsSBHw3Ls+AH9fNNgSBh8cnlYcuR1kDvLTc/STowiR/aRb+BRk/KohgI+jTXBpcOlw+FwzBQtNCFmLsEIk7TeKjcMBPavGWhfi7Spss+PYnSgn6yIBvLg8n84T6bu1CnIejBPXiLWOoxyPtA2xzZPFOjSFQaIshgean8dEQgQBHaI58DZGEnrsYX26iisBvFyR6B4h4E7c0DcGOAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="15d00c10-4e43-445a-8bb6-3f8ef2f1984f" CvElementArea="1451, 975, 25, 26" CvType="Icon" DesignTimeRectangle="1452, 976, 24, 24" FuzzySelectorArgument="&lt;webctrl parentid='attach-menu-button' tag='I' type='' class='icon icon-attach' aaname='' /&gt;" Guid="8f92a6d3-e187-4e4e-bb3e-62c797516854" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJXSURBVEhL7ZX7TxpBEMf9/5OaqiAgQiFYrDUa6jP46kNRUhFNfFfFA/3JFk4PCAiG6X3HPTy44x7G+IPxm2zgZuf2szM7t9NHr6x3oK1qtRqVy2VqtVrCYq1nAQFZXv1Og8MB+jDg4fHR46PpxCzJt7fCy1yugf+KRQp+ijKkf9BL3sAo+YJh/g+bxx+ks/ML4W2UK2BJltuw2PgEFUslMfMY9fxiksEj4SjJsnmkjoF62OcvX6larYqZJzUfHujb3AL7bGeywtopR0AnME1HJ6fsl5idF5ZO2QIBC0Vj7TQqakVa6eDw+PnAuzuFImNxXgC/eEbatneydH6RE15PwtxUYob9XacUkSAivIwIESkWXPvxiwsDqa3f3wvvR9icKBqkH5szkymwVq9TfGKSYXi5G4bSl/IF4d0Jw9zV9bWYMcoUuLGZbu8UMNwiPzdSPWHJlVVHMMgArFSqFIrEaMDrp0spz7D11JYjmH6ulwzAnCTxNaWdUb5QYLgdzOp20csA7P6OUltpfl5ILvMzpD/PIV+ATk7/sB3XHoaVXAN7wfCL55FQRO0eFbaZyVVK078zDAYMNnzkkAaDHedt1aoMQOwO1akvGi0iRIqBDe0fHrE/zg6bwTwq2a4vGoDQemqTF46OjfMFgEUQBbrBktoHb27+sh+KSINhU0i3nUyB+g8fZ4Io9DvHwpnsLmfBDQwyBUKITINiYHH/aJj8arNFSmFzC4N6AqFGo0E7u3tqRw+1wRooEotT7lKyPbNuWQL1QkdXFIVHs9kUVvdyDHwpvXUg0X+9w3aMSLeRBgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Version="V4">
+                        <uix:NClick.MouseButton>
+                          <InArgument x:TypeArguments="uix:NMouseButton">
+                            <Literal x:TypeArguments="uix:NMouseButton" sap2010:WorkflowViewState.IdRef="Literal`1_1" />
+                          </InArgument>
+                        </uix:NClick.MouseButton>
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" DesignTimeRectangle="1072, 894, 408, 45" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='ripple-container' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;div' parentid='MiddleColumn' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ripple-container' type='' parentid='MiddleColumn' tag='DIV' aaname='' /&gt;" Guid="b08dc862-f044-4af2-9018-29e3841c9cdf" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="f7594ed1-0088-4382-a962-3ea06e43cd7c" CvElementArea="1407, 971, 33, 33" CvType="Icon" DesignTimeRectangle="1405, 969, 37, 37" ElementType="Icon" Guid="5bb3d16e-c32a-4ebe-a1e4-02e6299f1146" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG4SURBVFhH7Zc9SwNBEIb9TypibWEvWAqC+DMsbMRG8KMSQdDCSARrERUEKwtFbEQEGyu5mIQcHhdDxrx7t3Ku+zF3F/AC+8CSu9nMzpvN7MzdGFUQL4qLF8XFi+IyuqLu3ro0f9ikya1AjLmDJl08x+msHvgs1Fo0tZ34wB82Dk5RtfuIpncaNL4Z/BoIdjSY0wE75lUfrIP1XFhFvQQ9mt37EAE2rkOKe31qR31aOevQxCDIzG6Dnt6/0m8n4B521WftMhQ2rId1bVhFnT5GIvhSvSUWl+AaNvz6/dvP1JqAe9iXT9p/fGDT+ahYRa1fhWIRfKqY5or4qFhF1R/0OwVMAUx2+C8e63dXhZVTOD2r5x2RG5I8olx5qGIVBUwnqcjAOqYTm8UpCty8xj91ShfMNbi1TcISpSPP35cXL4rL6IpCgiJRyyQ6DgoODAenqMqVBNlcUfRQ/MoUTxRf7Fjphiyb67DajGzirscXqyhTAGCaK+KjUminsr9aba5FfFSsomRDzuZUNj9sD3mqj2zIpXMKVO5xWCJfArAoguHa9RKQrW2yTg3txeE/8KK4eFFcvCgeRN8VSiNCL/mOGgAAAABJRU5ErkJggg==" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Ask a Question'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="DebuggerApi" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Text="[CurrentRow(&quot;soal&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" CVScreenId="af65142d-e3d4-4bd8-acb3-5bd1c7850079" DesignTimeRectangle="790, 474, 115, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Ask a Question' check:innerText='Ask a Question' /&gt;" Guid="82168b47-c838-4c37-92bb-c8c991a52a2d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="af65142d-e3d4-4bd8-acb3-5bd1c7850079" CvElementArea="1066, 396, 95, 40" CvTextArea="1086, 409, 53, 13" CvTextArgument="CREATE" CvType="Button" DesignTimeRectangle="1068, 399, 90, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Create' parentid='portals' tag='BUTTON' type='button' class='Button modal-action-button smaller primary' check:innerText='CREATE' /&gt;" Guid="dfdeae64-77b1-4e26-bdfe-974a27edda84" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Ask a Question'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="DebuggerApi" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Text="[CurrentRow(&quot;a&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" CVScreenId="a8b3fb08-0984-43d0-bdc1-cd2b0238a73b" CvElementArea="775, 600, 385, 50" CvType="InputBox" DesignTimeRectangle="790, 613, 109, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Add an Option' tag='LABEL' type='' class='' check:innerText='Add an Option' /&gt;" Guid="44525875-594c-4217-b517-b6fe36eeb515" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="a8b3fb08-0984-43d0-bdc1-cd2b0238a73b" DesignTimeRectangle="782, 554, 372, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='options-header' aaname='Poll options' check:innerText='Poll options' /&gt;" Guid="2f222615-6451-4a74-998f-0cbe7bdc09d0" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Ask a Question'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="DebuggerApi" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Text="[CurrentRow(&quot;b&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" CVScreenId="5e5f8c04-daf7-4635-ae93-1ddd61c194b5" CvElementArea="777, 634, 383, 50" CvType="InputBox" DesignTimeRectangle="790, 646, 109, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Add an Option' tag='LABEL' type='' class='' check:innerText='Add an Option' /&gt;" Guid="27d741dd-95d1-48ab-826c-b99f4ecb78e9" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="5e5f8c04-daf7-4635-ae93-1ddd61c194b5" CvTextArea="832, 709, 137, 18" CvTextArgument="Anonymous Voting" CvType="Text" DesignTimeRectangle="834, 707, 324, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='portals' tag='SPAN' type='' class='label' aaname='Anonymous Voting' check:innerText='Anonymous Voting' /&gt;" Guid="840faca7-907c-4a95-bb63-faf95f2d5fa8" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Ask a Question'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="DebuggerApi" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Text="[CurrentRow(&quot;c&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" CVScreenId="da34c8e1-6aae-4858-ab89-b212c5a68192" CvElementArea="775, 666, 385, 50" CvType="InputBox" DesignTimeRectangle="790, 679, 109, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Add an Option' tag='LABEL' type='' class='' check:innerText='Add an Option' /&gt;" Guid="095786cc-6cb1-440a-a8a1-29b6ccb6fba8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="da34c8e1-6aae-4858-ab89-b212c5a68192" CvTextArea="833, 742, 136, 18" CvTextArgument="Anonymous Voting" CvType="Text" DesignTimeRectangle="834, 740, 324, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='portals' tag='SPAN' type='' class='label' aaname='Anonymous Voting' check:innerText='Anonymous Voting' /&gt;" Guid="f84c98bc-59fe-4ed1-8961-95e33e7825ab" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Ask a Question'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="DebuggerApi" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Text="[CurrentRow(&quot;d&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" CVScreenId="da34c8e1-6aae-4858-ab89-b212c5a68192" CvElementArea="775, 666, 385, 50" CvType="InputBox" DesignTimeRectangle="790, 709, 109, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Add an Option' tag='LABEL' type='' class='' check:innerText='Add an Option' /&gt;" Guid="095786cc-6cb1-440a-a8a1-29b6ccb6fba8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="da34c8e1-6aae-4858-ab89-b212c5a68192" CvTextArea="833, 742, 136, 18" CvTextArgument="Anonymous Voting" CvType="Text" DesignTimeRectangle="834, 770, 324, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='portals' tag='SPAN' type='' class='label' aaname='Anonymous Voting' check:innerText='Anonymous Voting' /&gt;" Guid="f84c98bc-59fe-4ed1-8961-95e33e7825ab" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Ask a Question'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,250" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="DebuggerApi" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Text="[CurrentRow(&quot;e&quot;).ToString]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" CVScreenId="da34c8e1-6aae-4858-ab89-b212c5a68192" CvElementArea="775, 666, 385, 50" CvType="InputBox" DesignTimeRectangle="790, 709, 109, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Add an Option' tag='LABEL' type='' class='' check:innerText='Add an Option' /&gt;" Guid="095786cc-6cb1-440a-a8a1-29b6ccb6fba8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="da34c8e1-6aae-4858-ab89-b212c5a68192" CvTextArea="833, 742, 136, 18" CvTextArgument="Anonymous Voting" CvType="Text" DesignTimeRectangle="834, 770, 324, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='portals' tag='SPAN' type='' class='label' aaname='Anonymous Voting' check:innerText='Anonymous Voting' /&gt;" Guid="f84c98bc-59fe-4ed1-8961-95e33e7825ab" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Create'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" CVScreenId="ba058587-e1b4-4545-9936-a4c889638e7d" CvElementArea="1065, 301, 96, 41" CvTextArea="1086, 314, 53, 13" CvTextArgument="CREATE" CvType="Button" DesignTimeRectangle="1068, 304, 90, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Create' parentid='portals' tag='BUTTON' type='button' class='Button modal-action-button smaller primary' check:innerText='CREATE' /&gt;" Guid="6e6154a0-e8d9-4c15-9252-cb4130ffaefd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="ba058587-e1b4-4545-9936-a4c889638e7d" CvTextArea="840, 312, 80, 18" CvTextArgument="New Poll" CvType="Text" DesignTimeRectangle="841, 307, 203, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='modal-title' parentid='portals' tag='DIV' type='' aaname='New Poll' check:innerText='New Poll' /&gt;" Guid="aacb86fc-8828-4999-b8ec-a5f5aa97ab69" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" DesignTimeRectangle="1866, 898, 28, 28" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='F4zNUFhH icon icon-arrow-down' parentid='MiddleColumn' tag='I' aaname='' /&gt;" Guid="7c6260e9-a417-4b34-876c-dddc2c46dd9a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="1500, 960, 56, 56" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-label='Record voice message' tag='BUTTON' type='button' class='Button record main-button default secondary round click-allowed' aaname='Record voice message' /&gt;" Guid="d68faf20-2c67-46e1-b466-2554370a2de2" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Mengidentifikasi penyeb…'" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="978810e7-268a-46a1-8f2e-6bc64878acf3" Version="V4">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://web.telegram.org/a/#983000232" CVScreenId="d6096565-fe32-4363-b9b7-166a48b24b45" CvTextArea="901, 623, 306, 18" CvTextArgument="[CurrentRow(&quot;jawaban&quot;).ToString]" CvType="Text" DesignTimeRectangle="902, 620, 412, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="[&quot;&lt;webctrl parentid='message-23456' tag='SPAN' type='' class='label' aaname='&quot;+CurrentRow(&quot;jawaban&quot;).ToString+&quot;' check:innerText='&quot;+CurrentRow(&quot;jawaban&quot;).ToString+&quot;' /&gt;&quot;]" Guid="d24e46ec-4867-4b1d-ae18-f15526d52191" InformativeScreenshot="5a4371f03ece14b0d1fec32803c032f1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" IconBase64="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" Selector="&lt;html app='msedge.exe' title='Quiz Bot' /&gt;" Title="Quiz Bot" Url="https://web.telegram.org/a/#983000232" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
